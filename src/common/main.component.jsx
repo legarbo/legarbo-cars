@@ -19,7 +19,6 @@ class Main extends Component {
           </div>
         </nav>
         <div className="container">
-      <!-- Mount child routes -->
           {this.props.children}
         </div>
       </div>
