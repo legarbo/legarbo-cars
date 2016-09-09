@@ -11,7 +11,7 @@ import Car from './car/car.component.jsx'
 render (
   <Router>
     <Route component={Main} path="app">
-      <IndexRoute path='/' component={Home}/>
+      <IndexRoute component={Home}/>
       <Route path='/cars' component={Car}/>
       <Route path='/about' component={About}/>
     </Route>
