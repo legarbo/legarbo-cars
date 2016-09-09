@@ -73,7 +73,7 @@
 	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
-	  null,
+	  { component: Main },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _homeComponent2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/cars', component: _carComponent2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _aboutComponent2.default })

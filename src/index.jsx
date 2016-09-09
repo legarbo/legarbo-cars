@@ -8,7 +8,7 @@ import Car from './car/car.component.jsx'
 
 
 render (
-  <Router>
+  <Router component={Main}>
     <Route path='/' component={Home}/>
     <Route path='/cars' component={Car}/>
     <Route path='/about' component={About}/>
