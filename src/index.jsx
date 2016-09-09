@@ -10,13 +10,10 @@ import Car from './car/car.component.jsx'
 
 render (
   <Router>
-<<<<<<< HEAD
     <Route component={Main} path="app">
       <IndexRoute component={Home}/>
-=======
     <Route path="/" component={Main} history={browserHistory}>
       <IndexRoute path='/' component={Home}/>
->>>>>>> history
       <Route path='/cars' component={Car}/>
       <Route path='/about' component={About}/>
     </Route>
