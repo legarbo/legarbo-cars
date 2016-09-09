@@ -9,10 +9,12 @@ import Car from './car/car.component.jsx'
 
 
 render (
-  <Router component={Main}>
-    <Route path='/' component={Home}/>
-    <Route path='/cars' component={Car}/>
-    <Route path='/about' component={About}/>
+  <Router>
+    <Route component={Main}>
+      <Route path='/' component={Home}/>
+      <Route path='/cars' component={Car}/>
+      <Route path='/about' component={About}/>
+    </Route>
   </Router>,
   document.getElementById('container')
 )
