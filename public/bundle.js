@@ -57,6 +57,10 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 172);
 	
+	var _mainComponent = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./common/main.component.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _mainComponent2 = _interopRequireDefault(_mainComponent);
+	
 	var _homeComponent = __webpack_require__(/*! ./common/home.component.jsx */ 235);
 	
 	var _homeComponent2 = _interopRequireDefault(_homeComponent);
@@ -73,7 +77,7 @@
 	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
-	  { component: Main },
+	  { component: _mainComponent2.default },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _homeComponent2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/cars', component: _carComponent2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _aboutComponent2.default })
