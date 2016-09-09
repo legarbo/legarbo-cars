@@ -7,6 +7,7 @@ class Home extends Component {
     return (<h1>Hi!</h1>) 
   }
 }
+ // More components
 
 class Car extends Component {
   render() {

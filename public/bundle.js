@@ -89,6 +89,7 @@
 	
 	  return Home;
 	}(_react.Component);
+	// More components
 	
 	var Car = function (_Component2) {
 	  _inherits(Car, _Component2);
