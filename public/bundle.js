@@ -80,7 +80,7 @@
 	  null,
 	  _react2.default.createElement(
 	    _reactRouter.Route,
-	    { component: _mainComponent2.default, path: 'app' },
+	    { path: '/', component: _mainComponent2.default, history: _reactRouter.browserHistory },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { path: '/', component: _homeComponent2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/cars', component: _carComponent2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _aboutComponent2.default })
