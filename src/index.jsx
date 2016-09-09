@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
+import { Router, Route } from 'react-router'
 
 class Home extends Component {
   render() {
@@ -7,4 +8,9 @@ class Home extends Component {
   }
 }
 
-render(<Home />, document.getElementById('container'))
+render (
+  <Router>
+    <Route path='/' component={Home}/>
+  </Router>,
+  document.getElementById('container')
+)
