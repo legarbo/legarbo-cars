@@ -8,9 +8,23 @@ class Home extends Component {
   }
 }
 
+class Car extends Component {
+  render() {
+    return (<h1>Cars page</h1>)
+  }
+}
+
+class About extends Component {
+  render() {
+    return (<h1>About page</h1>)
+  }
+}
+
 render (
   <Router>
     <Route path='/' component={Home}/>
+    <Route path='/cars' component={Car}/>
+    <Route path='/about' component={About}/>
   </Router>,
   document.getElementById('container')
 )

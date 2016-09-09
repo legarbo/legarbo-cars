@@ -90,10 +90,58 @@
 	  return Home;
 	}(_react.Component);
 	
+	var Car = function (_Component2) {
+	  _inherits(Car, _Component2);
+	
+	  function Car() {
+	    _classCallCheck(this, Car);
+	
+	    return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
+	  }
+	
+	  _createClass(Car, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Cars page'
+	      );
+	    }
+	  }]);
+	
+	  return Car;
+	}(_react.Component);
+	
+	var About = function (_Component3) {
+	  _inherits(About, _Component3);
+	
+	  function About() {
+	    _classCallCheck(this, About);
+	
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	  }
+	
+	  _createClass(About, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'h1',
+	        null,
+	        'About page'
+	      );
+	    }
+	  }]);
+	
+	  return About;
+	}(_react.Component);
+	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
 	  null,
-	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: Home })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: Home }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/cars', component: Car }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: About })
 	), document.getElementById('container'));
 
 /***/ },
