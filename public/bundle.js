@@ -28108,10 +28108,10 @@
 	var Car = function (_Component) {
 	    _inherits(Car, _Component);
 	
-	    function Car() {
+	    function Car(props) {
 	        _classCallCheck(this, Car);
 	
-	        return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (Car.__proto__ || Object.getPrototypeOf(Car)).call(this, props));
 	    }
 	
 	    _createClass(Car, [{
@@ -28181,10 +28181,10 @@
 	var CarDetail = function (_Component) {
 	  _inherits(CarDetail, _Component);
 	
-	  function CarDetail() {
+	  function CarDetail(props) {
 	    _classCallCheck(this, CarDetail);
 	
-	    return _possibleConstructorReturn(this, (CarDetail.__proto__ || Object.getPrototypeOf(CarDetail)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (CarDetail.__proto__ || Object.getPrototypeOf(CarDetail)).call(this, props));
 	  }
 	
 	  _createClass(CarDetail, [{
@@ -28194,7 +28194,7 @@
 	      var id = this.props.params.id;
 	
 	      var car = cars.filter(function (car) {
-	        if (car.id === id) {
+	        if (car.id == id) {
 	          return car;
 	        }
 	      });

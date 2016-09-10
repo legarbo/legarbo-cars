@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 
 class CarDetail extends Component {
+  constructor(props) {
+    super(props)
+  }
   render() {
     const cars = this.props.route.data
     const id = this.props.params.id
 
     const car = cars.filter(car => {
-      if(car.id === id) {
+      if(car.id == id) {
         return car
       }
     })

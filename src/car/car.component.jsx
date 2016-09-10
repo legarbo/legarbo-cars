@@ -3,7 +3,10 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 
 class Car extends Component {
-
+    
+    constructor (props) {
+      super(props)
+    }
     render(){
         const cars = this.props.route.data
         // Map through cars and return linked cars
