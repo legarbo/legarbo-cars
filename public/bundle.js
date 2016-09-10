@@ -27882,7 +27882,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: '/' },
+	                    { to: '/', activeClassName: 'active' },
 	                    'Home'
 	                  )
 	                ),
@@ -27891,7 +27891,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: '/cars' },
+	                    { to: '/cars', activeClassName: 'active' },
 	                    'Cars'
 	                  )
 	                ),
@@ -27900,7 +27900,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: '/about' },
+	                    { to: '/about', activeClassName: 'active' },
 	                    'About'
 	                  )
 	                )
