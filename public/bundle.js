@@ -28123,7 +28123,7 @@
 	                return _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    {
-	                        to: '/cars' + car.id,
+	                        to: '/cars/' + car.id,
 	                        className: 'list-group-item',
 	                        key: car.id },
 	                    car.name

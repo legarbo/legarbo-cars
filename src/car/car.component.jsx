@@ -10,7 +10,7 @@ class Car extends Component {
         const carNode = cars.map((car) => {
             return (
                 <Link
-                    to={'/cars' + car.id}
+                    to={'/cars/' + car.id}
                     className="list-group-item"
                     key={car.id}>
                     {car.name}
