@@ -6,6 +6,7 @@ import Main from './common/main.component.jsx'
 import Home from './common/home.component.jsx'
 import About from './common/about.component.jsx'
 import Car from './car/car.component.jsx'
+import CarDetail from './car/car-detail.component.jsx'
 
 
 render (
@@ -13,6 +14,7 @@ render (
     <Route path="/" component={Main} history={hashHistory}>
       <IndexRoute component={Home}/>
       <Route path='/cars' component={Car}/>
+      <Route path='/cars/:id' component={CarDetail}/>
       <Route path='/about' component={About}/>
     </Route>
   </Router>,
