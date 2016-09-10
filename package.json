@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "webpack -d --watch",
     "build": "webpack",
-    "serve": "serve ./public"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
+    "express": "^4.14.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-router": "^2.7.0"
