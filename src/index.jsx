@@ -10,9 +10,9 @@ import CarDetail from './car/car-detail.component.jsx'
 
 
 render (
-  <Router>
-    <Route path="/" component={Main} history={hashHistory}>
-      <IndexRoute component={Home}/>
+  <Router history={hashHistory}>
+    <Route component={Main}>
+      <Route path='/' component={Home}/>
       <Route path='/cars' component={Car}/>
       <Route path='/cars/:id' component={CarDetail}/>
       <Route path='/about' component={About}/>
