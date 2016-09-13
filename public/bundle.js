@@ -27916,7 +27916,7 @@
 	              { className: 'navbar-header' },
 	              _react2.default.createElement(
 	                'a',
-	                { className: 'navbar-brand', href: '#' },
+	                { className: 'navbar-brand', href: '/' },
 	                'Legarbo Cars'
 	              )
 	            ),
