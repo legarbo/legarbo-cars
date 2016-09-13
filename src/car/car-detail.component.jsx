@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
+import { browserHistory } from 'react-router'
 
 class CarDetail extends Component {
   constructor(props) {
     super(props)
+    this.handleRedirect = this.handleRedirect.bind(this)
   }
+
+  handleRedirect() {
+    browserHistory.push('/cars')
+  }
+
   render() {
     const cars = this.props.route.data
     const id = this.props.params.id
 
     const car = cars.filter(car => {
-      if(car.id == id) {
+      if(car.id == id) { // loose equality must be used to compare string vs number
         return car
       }
     })
@@ -30,6 +37,12 @@ class CarDetail extends Component {
               <li><strong>Year</strong>: {car[0].year}</li>
               <li><strong>Price</strong>: {car[0].price}</li>
             </ul>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <button className="btn btn-default" 
+            onClick={this.handleRedirect}>Go to Cars</button>
           </div>
         </div>
       </div>
