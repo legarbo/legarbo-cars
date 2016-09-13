@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
 import Main from './common/main.component.jsx'
 import Home from './common/home.component.jsx'
@@ -59,7 +59,7 @@ import CarDetail from './car/car-detail.component.jsx'
         ];
 
 render (
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route component={Main}>
       <Route path='/' component={Home}/>
       <Route path='/cars' component={Car} data={data}/>
